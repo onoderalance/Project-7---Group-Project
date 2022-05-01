@@ -27,21 +27,25 @@
     {"compositeImage":{"FrameId":{"name":"f3ca09da-3f85-4002-af68-d6ff64fd545f","path":"sprites/spr_newDoor/spr_newDoor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"f3ca09da-3f85-4002-af68-d6ff64fd545f","path":"sprites/spr_newDoor/spr_newDoor.yy",},"LayerId":{"name":"67deca1a-20ff-4e5c-8788-25cf7dda8b66","path":"sprites/spr_newDoor/spr_newDoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_newDoor","path":"sprites/spr_newDoor/spr_newDoor.yy",},"resourceVersion":"1.0","name":"f3ca09da-3f85-4002-af68-d6ff64fd545f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1be635e2-f03f-464f-ba7b-f23ab06fed2b","path":"sprites/spr_newDoor/spr_newDoor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1be635e2-f03f-464f-ba7b-f23ab06fed2b","path":"sprites/spr_newDoor/spr_newDoor.yy",},"LayerId":{"name":"67deca1a-20ff-4e5c-8788-25cf7dda8b66","path":"sprites/spr_newDoor/spr_newDoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_newDoor","path":"sprites/spr_newDoor/spr_newDoor.yy",},"resourceVersion":"1.0","name":"1be635e2-f03f-464f-ba7b-f23ab06fed2b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_newDoor","path":"sprites/spr_newDoor/spr_newDoor.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 10.0,
+    "playbackSpeed": 0.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"555ac4b4-f30a-4a2c-b24f-8ce42f0fb486","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f3ca09da-3f85-4002-af68-d6ff64fd545f","path":"sprites/spr_newDoor/spr_newDoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3ec3c335-bae8-4293-a6d7-4aaddaee262a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1be635e2-f03f-464f-ba7b-f23ab06fed2b","path":"sprites/spr_newDoor/spr_newDoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

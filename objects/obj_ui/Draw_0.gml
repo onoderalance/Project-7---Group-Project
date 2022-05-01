@@ -6,7 +6,7 @@ draw_self();
 
 //draw key count
 draw_set_font(fnt_big);
-draw_text(x+133,y+3,global.keyCount);
+draw_text(x+131,y+3,global.keyCount);
 
 //draw heart count
 var healthNum = global.health;
