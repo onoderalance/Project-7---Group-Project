@@ -38,7 +38,7 @@ if(m_keyTimer >= 60)
 
 if(m_keyState)
 {
-	m_keyY = lerp(m_keyY, y-1, 0.025)
+	m_keyY = lerp(m_keyY, y-2, 0.025)
 }
 else
 {
