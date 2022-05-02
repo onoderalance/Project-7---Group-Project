@@ -4,3 +4,5 @@
 m_hasWon = false;
 
 m_winTimer = 0;
+
+scr_spriteBobInit();

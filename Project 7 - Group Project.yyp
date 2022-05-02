@@ -9,6 +9,7 @@
     {"id":{"name":"fnt_big","path":"fonts/fnt_big/fnt_big.yy",},"order":1,},
     {"id":{"name":"obj_ui","path":"objects/obj_ui/obj_ui.yy",},"order":4,},
     {"id":{"name":"tiles_walls","path":"tilesets/tiles_walls/tiles_walls.yy",},"order":3,},
+    {"id":{"name":"scr_spriteBob","path":"scripts/scr_spriteBob/scr_spriteBob.yy",},"order":2,},
     {"id":{"name":"spr_playerDown","path":"sprites/spr_playerDown/spr_playerDown.yy",},"order":0,},
     {"id":{"name":"obj_areaMarker","path":"objects/obj_areaMarker/obj_areaMarker.yy",},"order":1,},
     {"id":{"name":"spr_areaMarker","path":"sprites/spr_areaMarker/spr_areaMarker.yy",},"order":0,},
