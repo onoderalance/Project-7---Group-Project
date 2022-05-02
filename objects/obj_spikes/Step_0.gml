@@ -9,9 +9,15 @@ if(global.takingDamage || !m_spikesOut)
 
 //determines sprite shown (extended or retracted)
 if(!m_spikesOut)
-	image_index = 0;
+{
+	if(m_spikeState > 0 && m_spikeTimer%2 == 0)
+		m_spikeState--;
+}
 else
-	image_index = 1;
+{
+	if(m_spikeState < 2 && m_spikeTimer%2 == 0)
+		m_spikeState++;
+}
 
 //every second plays sound and reverses whether spikes are extended or not
 if(m_spikeTimer >= room_speed)
@@ -23,4 +29,5 @@ if(m_spikeTimer >= room_speed)
 	m_spikeTimer = 0;
 }
 m_spikeTimer++;
-	
+
+image_index = m_spikeState;

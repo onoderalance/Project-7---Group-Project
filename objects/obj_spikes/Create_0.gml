@@ -4,3 +4,6 @@
 //variables tracking when the spikes are counted as extended or not
 m_spikeTimer = 0;
 m_spikesOut = false;
+
+//handles processing the spike retraction animation
+m_spikeState = 0;
