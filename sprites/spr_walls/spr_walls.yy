@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "game",
+    "path": "folders/Sprites/game.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_walls",
