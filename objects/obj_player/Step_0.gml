@@ -182,6 +182,7 @@ if(m_currSolid != noone)
 			break;
 		//handles colliding with rocks, rock behavior handled in rock obj itself
 		case obj_rock:
+			show_debug_message("pushing rock");
 			m_currSolid.alarm[1] = 1;
 			break;
 	}
