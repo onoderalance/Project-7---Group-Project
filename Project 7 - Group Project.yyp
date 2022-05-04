@@ -24,6 +24,7 @@
     {"id":{"name":"obj_spikes","path":"objects/obj_spikes/obj_spikes.yy",},"order":6,},
     {"id":{"name":"spr_fadeBlock","path":"sprites/spr_fadeBlock/spr_fadeBlock.yy",},"order":5,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":0,},
+    {"id":{"name":"scr_rock","path":"scripts/scr_rock/scr_rock.yy",},"order":3,},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"order":1,},
     {"id":{"name":"spr_crystal","path":"sprites/spr_crystal/spr_crystal.yy",},"order":11,},
     {"id":{"name":"snd_hurt","path":"sounds/snd_hurt/snd_hurt.yy",},"order":13,},

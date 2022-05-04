@@ -4,10 +4,11 @@
 //enum for tracking direction
 enum dir
 {
+	null,
 	up,
 	down,
 	right,
-	left,
+	left
 }
 
 //globals to track last position in the case of falling into a pit

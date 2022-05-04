@@ -180,6 +180,10 @@ if(m_currSolid != noone)
 			global.health -= 2;
 			global.takingDamage = true;
 			break;
+		//handles colliding with rocks, rock behavior handled in rock obj itself
+		case obj_rock:
+			m_currSolid.alarm[1] = 1;
+			break;
 	}
 	//reset to noone incase most recent solid was deleted to avoid crashes
 	m_currSolid = noone;
