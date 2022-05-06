@@ -180,16 +180,6 @@ if(m_currSolid != noone)
 			alarm[1] = room_speed*2;
 			global.health -= 1;
 			break;
-		//handles colliding with spikes, playing sound and removing health.
-		case obj_spikes:
-			audio_play_sound(snd_hurt,1000,false);
-			
-			//triggers damage timer, ensuring player wont take multiple instances of damage repeatedly
-			m_damageTimer = 0;
-			
-			global.health -= 2;
-			global.takingDamage = true;
-			break;
 		//handles colliding with rocks, rock behavior handled in rock obj itself
 		case obj_rock:
 			show_debug_message("pushing rock");
@@ -198,6 +188,25 @@ if(m_currSolid != noone)
 	}
 	//reset to noone incase most recent solid was deleted to avoid crashes
 	m_currSolid = noone;
+}
+
+//handles hitting spikes separately (no longer treated as solid)
+var spikes = instance_place(x,y,obj_spikes)
+if(spikes)
+{
+	//removes spike collision when spikes are retracted, or when player has already taken damage
+	//from spikes
+	if(!global.takingDamage && spikes.m_spikesOut)
+	{
+		//handles colliding with spikes, playing sound and removing health.
+		audio_play_sound(snd_hurt,1000,false);
+			
+		//triggers damage timer, ensuring player wont take multiple instances of damage repeatedly
+		m_damageTimer = 0;
+			
+		global.health -= 2;
+		global.takingDamage = true;
+	}
 }
 
 //checks timers for taking damage and falling

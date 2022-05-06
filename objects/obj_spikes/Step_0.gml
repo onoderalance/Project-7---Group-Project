@@ -1,11 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//removes spike collision when spikes are retracted, or when player has already taken damage
-//from spikes
-isSolid = true;
-if(global.takingDamage || !m_spikesOut)
-	isSolid = false;
 
 //determines sprite shown (extended or retracted)
 if(!m_spikesOut)
