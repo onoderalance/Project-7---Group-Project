@@ -14,6 +14,20 @@ global.piece[2] = false;
 
 global.bigKey = false;
 
+//globally set the level from UI object
+global.level = level;
+
+switch(level)
+{
+	//level 1, default sprite
+	case 0:
+		image_index = 0;
+		break;
+	case 1:
+		image_index = 1;
+		break;
+}
+
 depth = -10000;
 
 //variables for losing screen timer

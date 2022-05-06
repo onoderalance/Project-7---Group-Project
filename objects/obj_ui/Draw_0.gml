@@ -7,7 +7,17 @@ draw_self();
 //draw key count
 draw_set_color(c_white);
 draw_set_font(fnt_big);
-draw_text(x+131,y+3,global.keyCount);
+
+switch(level)
+{
+	case 0:
+		draw_text(x+133,y+3,global.keyCount);
+		break;
+	case 1:
+		draw_text(x+131,y+3,global.keyCount);
+		break;
+}
+
 
 //draw heart count
 var healthNum = global.health;
@@ -43,8 +53,8 @@ for(var i = 0; i < global.maxHealth; i++)
 
 //draws the fragments, offset to align properly
 if(global.piece[0])
-	draw_sprite(spr_bigkey0,0,x+144+3,y+tileSize);
+	draw_sprite(spr_bigkey0,global.level,x+144+3,y+tileSize);
 if(global.piece[1])
-	draw_sprite(spr_bigkey1,0,x+144+9,y-1+tileSize);
+	draw_sprite(spr_bigkey1,global.level,x+144+9,y-1+tileSize);
 if(global.piece[2])
-	draw_sprite(spr_bigkey2,0,x+144+13,y-1+tileSize);
+	draw_sprite(spr_bigkey2,global.level,x+144+13,y-1+tileSize);

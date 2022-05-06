@@ -16,7 +16,7 @@ function scr_spriteBobInit()
 
 //handles sprite bobbing
 //timing handles how often it bobs, distance how many pixels it bobs, and scale the lerp scale
-function scr_spriteBob(timing, distance, scale)
+function scr_spriteBob(index, timing, distance, scale)
 {
 	m_bobTimer++;
 
@@ -35,6 +35,6 @@ function scr_spriteBob(timing, distance, scale)
 		m_bobY = lerp(m_bobY, y, scale)
 	}
 
-	draw_sprite(sprite_index,0,m_bobX,m_bobY);
+	draw_sprite(sprite_index,index,m_bobX,m_bobY);
 
 }
