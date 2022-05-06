@@ -8,5 +8,4 @@ draw_set_halign(fa_center);
 draw_text_transformed(x,y,"Level 1 Complete!",6,6,0)
 
 //centers second line appropriately
-draw_set_halign(fa_left);
 draw_text_transformed(x,y+180,"Press Enter to continue to Level 2",5,5,0);
