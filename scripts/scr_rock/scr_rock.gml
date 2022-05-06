@@ -1,27 +1,31 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_objDirCheck(checkObj)
+function scr_objDirCheck(checkObj, omitObj)
 {
 	var dirList = ds_list_create();
 	//left collision
 	if(collision_line(x-16,y+sprite_height/2,x,y+sprite_height/2,checkObj,false,true) != noone) //collision box to left of calling obj
 	{
-		ds_list_add(dirList,dir.left);
+		if(collision_line(x-16,y+sprite_height/2,x,y+sprite_height/2,checkObj,false,true).object_index != omitObj)
+			ds_list_add(dirList,dir.left);
 	}
 	//right collision
 	if(collision_line(x+sprite_width,y+sprite_height/2,x+sprite_width+15,y+sprite_height/2,checkObj,false,true) != noone)  //collision box to right of calling obj
 	{
-		ds_list_add(dirList,dir.right);
+		if(collision_line(x+sprite_width,y+sprite_height/2,x+sprite_width+15,y+sprite_height/2,checkObj,false,true).object_index != omitObj)
+			ds_list_add(dirList,dir.right);
 	}
 	//top collision
 	if(collision_line(x+sprite_width/2,y-16,x+sprite_width/2,y,checkObj,false,true) != noone)  //collision box to right of calling obj
 	{
-		ds_list_add(dirList,dir.up);
+		if(collision_line(x+sprite_width/2,y-16,x+sprite_width/2,y,checkObj,false,true).object_index != omitObj)
+			ds_list_add(dirList,dir.up);
 	}
 	//below collision
 	if(collision_line(x+sprite_width/2,y+sprite_height,x+sprite_width/2,y+sprite_height+15,checkObj,false,true) != noone)  //collision box to right of calling obj
 	{
-		ds_list_add(dirList,dir.down);
+		if(collision_line(x+sprite_width/2,y+sprite_height,x+sprite_width/2,y+sprite_height+15,checkObj,false,true).object_index != omitObj)
+			ds_list_add(dirList,dir.down);
 	}
 	//return any collisions
 	return dirList;

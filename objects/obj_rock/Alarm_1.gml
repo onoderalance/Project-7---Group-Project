@@ -3,7 +3,7 @@
 if(!m_rockMoving)
 {
 	//stores rock push direction 
-	m_playerDirList = scr_objDirCheck(obj_player);
+	m_playerDirList = scr_objDirCheck(obj_player, noone);
 	
 	//only one direction at a time to push the rock
 	if(ds_list_size(m_playerDirList) == 1)
@@ -17,7 +17,7 @@ if(!m_rockMoving)
 	if(m_rockDir != dir.null)
 	{
 		show_debug_message("attempting push");
-		m_objDirList = scr_objDirCheck(obj_solid)
+		m_objDirList = scr_objDirCheck(obj_solid, obj_spikes)
 		if(scr_checkObstruction(m_rockDir, m_objDirList))
 		{
 			show_debug_message("no obst");
