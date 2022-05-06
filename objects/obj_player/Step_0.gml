@@ -80,7 +80,16 @@ if(m_xmove != 0)
 	//any returns from previous axis
 	//only overrides current solid if there was no input/possible collision on other axis
 	if(m_instSolid != noone || m_ymove == 0)
-		m_currSolid = m_instSolid;
+	{
+		if(m_currSolid != noone) //prevent override on pits or areaMarkers
+		{
+			if(m_currSolid.object_index != obj_pit && m_currSolid.object_index != obj_areaMarker) 
+				m_currSolid = m_instSolid;
+		}	
+		else
+			m_currSolid = m_instSolid;
+	}
+
 }
 
 //if colliding with a solid (solid is not null/noone), determines what to do with object
@@ -159,6 +168,7 @@ if(m_currSolid != noone)
 		case obj_pit:
 			global.playingGame = false;
 			audio_play_sound(snd_falling,1000,false);
+			
 			//retains momentum towards pit collided with (player sprite goes further into the pit)
 			m_xmove = sign((m_currSolid.x) - x)*abs(m_xmove)/4;
 			m_ymove = sign((m_currSolid.y) - y)*abs(m_ymove)/4;
