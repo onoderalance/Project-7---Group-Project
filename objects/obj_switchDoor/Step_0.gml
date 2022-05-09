@@ -8,3 +8,5 @@ if(global.switchHit[switchID])
 //modified depth sorting that wont ever covered the player
 depth = max(-y,obj_player.depth+1);
 
+image_index = global.level;
+
