@@ -48,6 +48,7 @@
     {"id":{"name":"spr_walls","path":"sprites/spr_walls/spr_walls.yy",},"order":0,},
     {"id":{"name":"obj_wideDoor","path":"objects/obj_wideDoor/obj_wideDoor.yy",},"order":2,},
     {"id":{"name":"scr_player","path":"scripts/scr_player/scr_player.yy",},"order":0,},
+    {"id":{"name":"obj_heart","path":"objects/obj_heart/obj_heart.yy",},"order":10,},
     {"id":{"name":"spr_newDoor","path":"sprites/spr_newDoor/spr_newDoor.yy",},"order":5,},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},"order":3,},
     {"id":{"name":"spr_bigkey0","path":"sprites/spr_bigkey0/spr_bigkey0.yy",},"order":1,},

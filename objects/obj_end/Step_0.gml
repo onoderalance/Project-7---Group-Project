@@ -15,7 +15,7 @@ if(place_meeting(x,y,obj_player) && !m_hasWon)
 if(m_hasWon)
 {
 	if(m_winTimer%5==0 && global.health < global.maxHealth)
-		global.health++;;
+		global.health++;
 	m_winTimer++;
 	if(m_winTimer >= room_speed*2)
 		room_goto(rm_win);
