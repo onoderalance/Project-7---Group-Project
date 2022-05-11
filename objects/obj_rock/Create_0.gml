@@ -9,6 +9,8 @@ m_playerDirList = noone;
 m_objDirList = noone;
 //tracks whether rock is being currently pushed
 m_rockMoving = false;
+//tracks whether the rock is locked into a switch
+m_rockSet = false;
 
 m_targetX = x;
 m_targetY = y;

@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(m_rockSet)
+	image_index = 1;
+
 if(m_rockMoving)
 {
 	//adjust along x	
