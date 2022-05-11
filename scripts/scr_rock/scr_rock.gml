@@ -1,8 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_objDirCheck(checkObj)
+function scr_objDirCheck(dirList, checkObj)
 {
-	var dirList = ds_list_create();
 	//left collision
 	if(collision_line(x-16,y+sprite_height/2,x,y+sprite_height/2,checkObj,false,true) != noone) //collision box to left of calling obj
 	{
@@ -25,7 +24,6 @@ function scr_objDirCheck(checkObj)
 	}
 	//return any collisions
 	return dirList;
-	
 }
 
 function scr_pushInDir(pushDir)
