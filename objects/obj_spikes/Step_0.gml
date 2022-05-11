@@ -25,4 +25,15 @@ if(m_spikeTimer >= room_speed)
 }
 m_spikeTimer++;
 
-image_index = m_spikeState;
+switch(global.level)
+{
+	case 0: //nothing for level 1, default sprites
+		image_index = m_spikeState;
+		break;
+	case 1: //offset sprite index by 3
+		image_index = m_spikeState + 3;
+		break;
+}
+
+
+
