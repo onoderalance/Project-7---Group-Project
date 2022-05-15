@@ -5,7 +5,7 @@
 draw_set_color(c_white);
 draw_set_font(fnt_big);
 draw_set_halign(fa_center);
-draw_text_transformed(x,y,"Bobbi's Tomb",6,6,0)
+draw_text_transformed(x,y,"Bebbo's Tomb",6,6,0)
 
 //centers second line appropriately
 draw_text_transformed(x,y+180,"Press Enter to Start",5,5,0);
