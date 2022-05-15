@@ -129,8 +129,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "cutscene",
+    "path": "folders/Sprites/cutscene.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_fakeplayer",

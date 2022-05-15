@@ -1,5 +1,5 @@
-alarm_set(0, 140);
+alarm_set(0, 120);
 
-global.maxHealth = 6;
+alarm_set(1, 240);
 
 audio_play_sound(snd_falling,1000,false);

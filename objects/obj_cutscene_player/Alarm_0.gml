@@ -1,1 +1,2 @@
-room_goto(rm_level1);
+obj_screenFade.alarm[0] = 1;
+
