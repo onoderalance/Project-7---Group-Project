@@ -22,7 +22,7 @@ camera_set_view_pos(view_camera[0],x,y-16);
 //curtain behavior
 if(m_curtainTimer > -1)
 {
-	if(m_curtainTimer%5 == 0)
+	if(m_curtainTimer%5 == 0 && m_curtainTimer >= 30)
 		m_curtainState++;
 	
 	m_curtainTimer++;
