@@ -5,7 +5,6 @@
 draw_self();
 
 //draw key count
-draw_set_color(c_white);
 draw_set_font(fnt_big);
 
 switch(level)
@@ -18,6 +17,8 @@ switch(level)
 		break;
 }
 
+//set color after so that first cycle is clean
+draw_set_color(c_white);
 
 //draw heart count
 var healthNum = global.health;
@@ -28,7 +29,7 @@ for(var i = 0; i < global.maxHealth; i++)
 	if(i % 2 == 0)
 	{
 		nextHealthPos[0] = x + 1 + i*4;
-		nextHealthPos[1] = y + 1
+		nextHealthPos[1]	= y + 1
 		
 		//moves hearts to the second row after 4 have been drawn
 		if(i>7)

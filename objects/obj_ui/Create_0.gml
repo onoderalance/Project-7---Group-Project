@@ -14,6 +14,10 @@ global.piece[2] = false;
 
 global.bigKey = false;
 
+//make initialization look cleaner
+draw_set_color(c_black);
+draw_set_font(fnt_big);
+
 //globally set the level from UI object
 global.level = level;
 
