@@ -80,7 +80,6 @@
     {"id":{"name":"spr_walls2","path":"sprites/spr_walls2/spr_walls2.yy",},"order":1,},
     {"id":{"name":"spr_rockSwitch","path":"sprites/spr_rockSwitch/spr_rockSwitch.yy",},"order":14,},
     {"id":{"name":"spr_switchDoor","path":"sprites/spr_switchDoor/spr_switchDoor.yy",},"order":9,},
-    {"id":{"name":"obj_levelCurtain","path":"objects/obj_levelCurtain/obj_levelCurtain.yy",},"order":8,},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},"order":0,},
     {"id":{"name":"obj_blockObst","path":"objects/obj_blockObst/obj_blockObst.yy",},"order":4,},
     {"id":{"name":"obj_end","path":"objects/obj_end/obj_end.yy",},"order":1,},

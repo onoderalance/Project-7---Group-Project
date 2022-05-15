@@ -17,3 +17,17 @@ if(m_movementTimer >= 0)
 
 //move camera to cameraController's location, offset to make room for ui at top
 camera_set_view_pos(view_camera[0],x,y-16);
+
+
+//curtain behavior
+if(m_curtainTimer > -1)
+{
+	if(m_curtainTimer%5 == 0)
+		m_curtainState++;
+	
+	m_curtainTimer++;
+	
+	if(m_curtainTimer >= 120)
+		m_curtainTimer = -1;
+}
+

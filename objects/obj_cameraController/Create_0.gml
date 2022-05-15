@@ -15,3 +15,9 @@ global.cameraController = self;
 m_xmove = 0;
 m_ymove = 0;
 m_movementTimer = -1;
+
+//curtain behavior
+depth = -1000;
+
+m_curtainTimer = 0;
+m_curtainState = 0;
