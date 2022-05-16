@@ -295,10 +295,6 @@
         {"properties":[
             {"propertyId":{"name":"zoneX","path":"objects/obj_spikes/obj_spikes.yy",},"objectId":{"name":"obj_spikes","path":"objects/obj_spikes/obj_spikes.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"zoneY","path":"objects/obj_spikes/obj_spikes.yy",},"objectId":{"name":"obj_spikes","path":"objects/obj_spikes/obj_spikes.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"obj_spikes","path":"objects/obj_spikes/obj_spikes.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1000.0,"y":736.0,"resourceVersion":"1.0","name":"inst_502E9D10","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"zoneX","path":"objects/obj_spikes/obj_spikes.yy",},"objectId":{"name":"obj_spikes","path":"objects/obj_spikes/obj_spikes.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-            {"propertyId":{"name":"zoneY","path":"objects/obj_spikes/obj_spikes.yy",},"objectId":{"name":"obj_spikes","path":"objects/obj_spikes/obj_spikes.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_spikes","path":"objects/obj_spikes/obj_spikes.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":968.0,"y":688.0,"resourceVersion":"1.0","name":"inst_30277371","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"zoneX","path":"objects/obj_spikes/obj_spikes.yy",},"objectId":{"name":"obj_spikes","path":"objects/obj_spikes/obj_spikes.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -587,7 +583,6 @@
     {"name":"inst_4F22A803","path":"rooms/rm_level2/rm_level2.yy",},
     {"name":"inst_6E8CC38E","path":"rooms/rm_level2/rm_level2.yy",},
     {"name":"inst_7F3EF189","path":"rooms/rm_level2/rm_level2.yy",},
-    {"name":"inst_502E9D10","path":"rooms/rm_level2/rm_level2.yy",},
     {"name":"inst_30277371","path":"rooms/rm_level2/rm_level2.yy",},
     {"name":"inst_3B8A71D2","path":"rooms/rm_level2/rm_level2.yy",},
     {"name":"inst_742E5D3","path":"rooms/rm_level2/rm_level2.yy",},
