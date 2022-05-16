@@ -5,5 +5,5 @@
 if(keyboard_check(vk_enter))
 {
 	global.maxHealth = 6;
-	room_goto(rm_cutscene_1);
+	room_goto(rm_level2);
 }
