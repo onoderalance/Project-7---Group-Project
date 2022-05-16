@@ -22,7 +22,7 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_42FF42DA","path":"rooms/rm_win/rm_win.yy",},
+    {"name":"inst_42FF42DA","path":"rooms/rm_transition/rm_transition.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -50,7 +50,7 @@
     "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rm_win",
+  "name": "rm_transition",
   "tags": [],
   "resourceType": "GMRoom",
 }

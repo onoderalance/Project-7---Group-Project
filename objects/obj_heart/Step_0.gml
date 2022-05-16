@@ -3,7 +3,7 @@
 
 if(place_meeting(x,y,obj_player) && m_heartTimer < -1)
 {
-	audio_play_sound(snd_collect,1000,false);
+	//audio_play_sound(snd_collect,1000,false);
 	m_heartTimer = 0;
 	visible = false;
 } 
@@ -11,7 +11,10 @@ if(place_meeting(x,y,obj_player) && m_heartTimer < -1)
 if(m_heartTimer > -1)
 {
 	if(m_heartTimer%5==0 && global.health < global.maxHealth)
+	{
+		audio_play_sound(snd_heart,1000,false);
 		global.health++;
+	}
 	//should iterate health++ a max of two times
 	if(m_heartTimer >= 9)
 	{

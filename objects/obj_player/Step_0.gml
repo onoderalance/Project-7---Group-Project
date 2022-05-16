@@ -13,49 +13,51 @@ if(global.playingGame)
 	//Calculates movement values based on input (mutiply speed by 1, 0, or -1 based on input )
 	m_xmove = (moveRight - moveLeft) * m_speed;
 	m_ymove = (moveDown - moveUp) * m_speed;
-}
-
-//Determines which direction the player is facing, overriding to most recently pressed key
-if(keyboard_check_pressed(ord("D")))
-	m_playerDir = dir.right;
-else if(keyboard_check_pressed(ord("W")))
-	m_playerDir = dir.up;
-else if(keyboard_check_pressed(ord("A")))
-	m_playerDir = dir.left;
-else if(keyboard_check_pressed(ord("S")))
-	m_playerDir = dir.down;
-
-//case if only moving in one direction, use basic check 
-//(revert to travel direction if no longer diagonal)
-else if(m_xmove*m_ymove == 0)
-{
-	if(m_xmove > 0)
+	
+	//Determines which direction the player is facing, overriding to most recently pressed key
+	if(keyboard_check_pressed(ord("D")))
 		m_playerDir = dir.right;
-	else if(m_xmove < 0)
-		m_playerDir = dir.left;
-
-	if(m_ymove > 0)
-		m_playerDir = dir.down;
-	else if (m_ymove < 0)
+	else if(keyboard_check_pressed(ord("W")))
 		m_playerDir = dir.up;
+	else if(keyboard_check_pressed(ord("A")))
+		m_playerDir = dir.left;
+	else if(keyboard_check_pressed(ord("S")))
+		m_playerDir = dir.down;
+
+	//case if only moving in one direction, use basic check 
+	//(revert to travel direction if no longer diagonal)
+	else if(m_xmove*m_ymove == 0)
+	{
+		if(m_xmove > 0)
+			m_playerDir = dir.right;
+		else if(m_xmove < 0)
+			m_playerDir = dir.left;
+
+		if(m_ymove > 0)
+			m_playerDir = dir.down;
+		else if (m_ymove < 0)
+			m_playerDir = dir.up;
+	}
+
+	//Determines which sprite to use
+	switch(m_playerDir)
+	{
+		case dir.up:
+			sprite_index = spr_playerUp;
+			break;
+		case dir.down:
+			sprite_index = spr_playerDown;
+			break;
+		case dir.right:
+			sprite_index = spr_playerRight;
+			break;
+		case dir.left:
+			sprite_index = spr_playerLeft;
+			break;
+	}
 }
 
-//Determines which sprite to use
-switch(m_playerDir)
-{
-	case dir.up:
-		sprite_index = spr_playerUp;
-		break;
-	case dir.down:
-		sprite_index = spr_playerDown;
-		break;
-	case dir.right:
-		sprite_index = spr_playerRight;
-		break;
-	case dir.left:
-		sprite_index = spr_playerLeft;
-		break;
-}
+
 
 //determines sprite movement
 if(m_xmove != 0 || m_ymove != 0)
@@ -163,6 +165,17 @@ if(m_currSolid != noone)
 				with(global.cameraController)
 					scr_pan(newDir);
 			}
+			break;
+		case obj_stairs:
+			
+			show_debug_message((m_currSolid.x-x)/120);
+			if(abs(x - m_currSolid.x) > 1)
+				m_xmove = (m_currSolid.x-x)/120;
+			else
+				m_xmove = 0;
+			
+			m_ymove = -tileSize/room_speed;
+			global.playingGame = false;
 			break;
 		//handles falling into a pit, playing sound and removing health. 
 		case obj_pit:

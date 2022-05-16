@@ -27,6 +27,6 @@ m_dialogueList = ds_list_create();
 //2d array holding the various dialogue options, with the first arg corresponding to NPC id,
 //and the second corresponding to gamestate.
 m_dialogueArray[1][0] = m_dialogueString;
-m_dialogueArray[1][1] = "The crystal is to the north.";
+m_dialogueArray[1][1] = "The stairway is to the north.";
 m_dialogueArray[2][0] = "Should not be accessible.";
-m_dialogueArray[2][1] = "You made it! Collect the crystal to escape.";
+m_dialogueArray[2][1] = "The crystal will grant you power.";

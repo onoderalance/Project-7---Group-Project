@@ -28,11 +28,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "game",
-    "path": "folders/Objects/game.yy",
+    "name": "environment",
+    "path": "folders/Objects/environment.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_end",
+  "name": "obj_crystal",
   "tags": [],
   "resourceType": "GMObject",
 }
