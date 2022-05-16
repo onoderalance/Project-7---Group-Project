@@ -4,7 +4,7 @@
 //plays sounds and returns to "title" screen upon contact with player
 if(place_meeting(x,y,obj_player) && !m_pickedCrystal)
 {
-	audio_play_sound(snd_win,1000,false);
+	audio_play_sound(snd_crystal,1000,false);
 	//add one max heart?
 	global.maxHealth += 2;
 	m_pickedCrystal = true;

@@ -11,7 +11,7 @@ image_index = global.level;
 if(place_meeting(x,y,obj_player) && !m_hasWon)
 {
 	//new win sound???
-	//audio_play_sound(snd_win,1000,false);
+	audio_play_sound(snd_steps,1000,false);
 	m_hasWon = true;
 	obj_screenFade.alarm[1] = 1;
 } 
@@ -22,6 +22,7 @@ if(m_hasWon)
 	m_winTimer++;
 	if(m_winTimer >= room_speed*2)
 	{
+		audio_stop_sound(snd_steps);
 		switch(global.level)
 		{
 			case 0:

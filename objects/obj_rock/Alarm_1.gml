@@ -27,6 +27,8 @@ if(!m_rockSet)
 			scr_objDirCheck(m_objDirList, obj_blockObst)
 			if(scr_checkObstruction(m_rockDir, m_objDirList))
 			{
+				audio_play_sound(snd_rock,1000,false);
+	
 				show_debug_message("no obst");
 				m_rockMoving = true;
 				scr_pushInDir(m_rockDir);
