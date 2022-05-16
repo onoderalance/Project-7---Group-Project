@@ -208,6 +208,21 @@ if(spikes)
 		global.takingDamage = true;
 	}
 }
+//handles hitting arrows separately
+var arrows = instance_place(x,y,obj_arrow)
+if(arrows)
+{
+	if(!global.takingDamage && arrows.image_index < 2)
+	{
+		audio_play_sound(snd_hurt,1000,false);
+			
+		//triggers damage timer, ensuring player wont take multiple instances of damage repeatedly
+		m_damageTimer = 0;
+			
+		global.health -= 2;
+		global.takingDamage = true;
+	}
+}
 
 //checks timers for taking damage and falling
 scr_damageTimer();
