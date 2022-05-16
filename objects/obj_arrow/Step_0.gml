@@ -33,10 +33,16 @@ else
 	if(m_arrowSpawnImmunity > 8 && !m_broken)
 		image_index = 1;
 		
-	if(place_meeting(x,y,obj_solid) && m_arrowSpawnImmunity > round(32/speed)+1)
+	var coll = instance_place(x,y,obj_solid)
+	
+	if(coll && m_arrowSpawnImmunity > round(32/speed)+1)
 	{
-		m_broken = true;
-		depth = -y;
+		//arrows cant collide with pits
+		if(coll.object_index != obj_pit && coll.object_index != obj_spawnSetter)
+		{
+			m_broken = true;
+			depth = -y;
+		}
 	}
 
 	m_arrowSpawnImmunity++;
