@@ -54,3 +54,6 @@ m_falling = -1;
 
 //player starts idle, initializes image speed accordingly
 image_speed = 0;
+
+//start music
+audio_play_sound(snd_background, 10, true);
