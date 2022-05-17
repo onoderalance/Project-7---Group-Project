@@ -2,6 +2,8 @@ alarm[0] = 2.5 * room_speed;
 
 is_fading = false;
 
+end_loop = 0;
+
 obj_screenFade.alarm[0] = 4 * room_speed
 
 obj_screenFadeOut.alarm[1] = 1 * room_speed

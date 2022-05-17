@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "game",
-    "path": "folders/Objects/game.yy",
+    "name": "cutscene",
+    "path": "folders/Objects/cutscene.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_screenFadeOut",

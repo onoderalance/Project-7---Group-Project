@@ -28,7 +28,7 @@
     "path": "folders/Objects/game.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_win2",
+  "name": "obj_reset",
   "tags": [],
   "resourceType": "GMObject",
 }
