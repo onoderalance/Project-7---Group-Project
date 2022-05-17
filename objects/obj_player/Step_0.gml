@@ -265,7 +265,11 @@ if(m_currNPC != noone)
 		
 		with(global.textBox)
 		{
-			m_dialogueCurr = m_dialogueArray[obj_player.m_currNPCID][global.gameState];
+			if(global.level == 0)
+				m_dialogueCurr = m_dialogueArray[obj_player.m_currNPCID][global.gameState];
+			else
+				m_dialogueCurr = m_dialogueArray2[obj_player.m_currNPCID];
+			//level 2 does not update dialogue based on state
 			m_dialogueDirection = 1;
 		}
 	}

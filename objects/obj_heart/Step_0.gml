@@ -3,7 +3,8 @@
 
 if(place_meeting(x,y,obj_player) && m_heartTimer < -1)
 {
-	//audio_play_sound(snd_collect,1000,false);
+	if(global.health >= global.maxHealth)
+		audio_play_sound(snd_collect,1000,false);
 	m_heartTimer = 0;
 	visible = false;
 } 

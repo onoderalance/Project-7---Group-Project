@@ -35,7 +35,7 @@ else
 		
 	var coll = instance_place(x,y,obj_solid)
 	
-	if(coll && m_arrowSpawnImmunity > round(32/speed)+1)
+	if(coll && m_arrowSpawnImmunity > 12)
 	{
 		//arrows cant collide with pits
 		if(coll.object_index != obj_pit && coll.object_index != obj_spawnSetter)

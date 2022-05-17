@@ -29,6 +29,7 @@ if(m_hasWon)
 				room_goto(rm_transition);
 				break;
 			case 1:
+				room_goto(rm_transition2);
 				break;
 		}
 	}

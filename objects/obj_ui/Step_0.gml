@@ -12,6 +12,7 @@ if(global.piece[0] && global.piece[1] && global.piece[2])
 if(global.health <= 0 && !m_hasLost)
 {
 	global.playingGame = false;
+	audio_stop_sound(snd_background);
 	audio_play_sound(snd_lose,1000,false);
 	obj_screenFade.alarm[0] = 1;
 	m_hasLost = true;

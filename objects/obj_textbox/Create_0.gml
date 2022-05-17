@@ -30,3 +30,7 @@ m_dialogueArray[1][0] = m_dialogueString;
 m_dialogueArray[1][1] = "The stairway is to the north.";
 m_dialogueArray[2][0] = "Should not be accessible.";
 m_dialogueArray[2][1] = "The crystal will grant you power.";
+
+m_dialogueArray2[0] = "aiyababa";
+m_dialogueArray2[1] = "Watch out for arrows!";
+m_dialogueArray2[2] = "Exit to surface.";
